@@ -30,9 +30,6 @@ runs:
           --dereference --hard-dereference \
           --directory "$INPUT_PATH" \
           -cvf "$RUNNER_TEMP/artifact.tar" \
-          --exclude=.git \
-          --exclude=.github \
-          --exclude=".[^/]*" \
           .
         echo ::endgroup::
       env:
@@ -48,9 +45,6 @@ runs:
           --dereference --hard-dereference \
           --directory "$INPUT_PATH" \
           -cvf "$RUNNER_TEMP/artifact.tar" \
-          --exclude=.git \
-          --exclude=.github \
-          --exclude=".[^/]*" \
           .
         echo ::endgroup::
       env:
@@ -66,9 +60,6 @@ runs:
           --dereference --hard-dereference \
           --directory "$INPUT_PATH" \
           -cvf "$RUNNER_TEMP\artifact.tar" \
-          --exclude=.git \
-          --exclude=.github \
-          --exclude=".[^/]*" \
           --force-local \
           "."
         echo ::endgroup::
